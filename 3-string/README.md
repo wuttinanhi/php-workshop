@@ -14,6 +14,22 @@
 
 <br>
 
+# String Concatenation
+
+> สามารถต่อ string ได้ด้วยเครื่องหมายจุด `.` หรือใช้ `.=`
+
+```php
+<?php
+  $x = "Hello";
+  $y = "World";
+
+  echo $x . " " . $y; // Hello World
+  echo $x .= " " . $y; // Hello World
+?>
+```
+
+<br><br>
+
 # strlen()
 
 > หาความยาวของ string
