@@ -1,5 +1,7 @@
 # Number
 
+> ตัวเลขในภาษา PHP เป็นได้ทั้งจำนวนเต็มและจำนวนทศนิยม
+
 ```php
 <?php
   $integer_number = 123;
@@ -64,6 +66,105 @@
   echo $x / $y; // 0.5
   echo $x % $y; // 1
   echo $x ** $y; // 2
+?>
+```
+
+<br><br>
+
+# Assignment Operators
+
+<table style="width:100%">
+  <tbody>
+    <tr>
+      <th>เครื่องหมาย</th>
+      <th>เหมือนกับ</th>
+    </tr>
+    <tr>
+      <td>$x += $y</td>
+      <td>$x = $x + $y</td>
+    </tr>
+    <tr>
+      <td>$x -= $y</td>
+      <td>$x = $x - $y</td>
+    </tr>
+    <tr>
+      <td>$x *= $y</td>
+      <td>$x = $x * $y</td>
+    </tr>
+    <tr>
+      <td>$x /= $y</td>
+      <td>$x = $x / $y</td>
+    </tr>
+    <tr>
+      <td>$x %= $y</td>
+      <td>$x = $x % $y</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+
+# Increment / Decrement Operators
+
+<table style="width:100%">
+  <tbody>
+    <tr>
+      <th>เครื่องหมาย</th>
+      <th>คำเรียก</th>
+      <th>คำอธิบาย</th>
+    </tr>
+    <tr>
+      <td>++$x</td>
+      <td>Pre-increment</td>
+      <td> บวก $x เพิ่มทีละ 1 ก่อนแล้วค่อย return ค่า $x</td>
+    </tr>
+    <tr>
+      <td>$x++</td>
+      <td>Pre-increment</td>
+      <td> return ค่า  $x ก่อนแล้วค่อยบวก $x เพิ่มทีละ 1</td>
+    </tr>
+    <tr>
+      <td>--$x</td>
+      <td>Pre-decrement</td>
+       <td> ลบ $x ทีละ 1 ก่อนแล้วค่อย return ค่า $x</td>
+    </tr>
+    <tr>
+      <td>$x--</td>
+      <td>Post-decrement</td>
+      <td> return ค่า  $x ก่อนแล้วค่อยลบ $x ทีละ 1</td>
+    </tr>
+  </tbody>
+</table>
+
+```php
+// $x++
+<?php
+  $x = 10;
+  echo $x++; // 10
+?>
+```
+
+```php
+// $++x
+<?php
+  $x = 10;
+  echo $++x; // 11
+?>
+```
+
+```php
+// $x--
+<?php
+  $x = 10;
+  echo $x--; // 10
+?>
+```
+
+```php
+// --$x
+<?php
+  $x = 10;
+  echo --$x; // 9
 ?>
 ```
 
