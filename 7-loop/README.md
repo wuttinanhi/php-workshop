@@ -6,6 +6,9 @@
 > - `while`
 > - `do...while`
 > - `foreach`
+>
+> ใช้ continue ในการข้ามการวนซ้ำ<br>
+> ใช้ break ในการออกจากการวนซ้ำ
 
 <br><br>
 
@@ -73,6 +76,38 @@ while($x <= 10) {
 
   foreach($age as $key => $val) {
     echo "$key = $val<br>";
+  }
+?>
+```
+
+<br><br>
+
+# continue
+
+```php
+<?php
+  for ($x = 0; $x < 10; $x++) {
+    if ($x % 2 == 0) {
+      continue;
+    }
+
+    echo "odd number: $x <br>";
+  }
+?>
+```
+
+<br><br>
+
+# break
+
+```php
+<?php
+  for ($x = 0; $x < 10; $x++) {
+    if ($x == 5) {
+      break;
+    }
+
+    echo "x = $x <br>";
   }
 ?>
 ```
