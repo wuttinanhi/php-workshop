@@ -7,43 +7,27 @@ Hope you have a good time with this workshop.
 
 # Fun Facts About PHP
 
-<br>
-
 > Since 1995 By Rasmus Lerdorf
-
-<br>
 
 > เป็น Open Source
 
-<br>
-
 > PHP เริ่มแรกย่อมาจาก `Personal Home Page` แต่ปัจจุบันเปลี่ยนมาเป็น `PHP: Hypertext Preprocessor`
-
-<br>
 
 > นิยมใช้เขียนเว็บ (ทำอย่างอื่นก็ได้นะ)
 
-<br>
-
 > เป็น Serverside Language
-
-<br>
 
 > นามสกุลไฟล์เป็น `.php`
 
-<br>
-
 > ต้องลงท้ายด้วย semicolon `;` เสมอ
 
-<br>
+> ใช้แท๊ก `<?php ?>` เพื่อเพิ่มโค๊ดลงในไฟล์
 
 > สามารถใส่ข้อความหรือ HTML ในไฟล์ได้
 
-<br>
-
 > รูป Logo เป็นรูปช้าง (ElePHPant)
 
-<br>
+<br><br>
 
 <img src="https://assets.php.earth/docs/php/community/elephpantblue.png" class="center">
 
@@ -55,7 +39,7 @@ Hope you have a good time with this workshop.
 
 ### XAMPP
 
-ใช้ [XAMPP](https://www.apachefriends.org/) (ง่ายที่สุด) _ ห้ามใช้ในงาน Production _
+ใช้ [XAMPP](https://www.apachefriends.org/) (ง่ายที่สุด) \* ห้ามใช้ในงาน Production \*
 
 <br>
 
