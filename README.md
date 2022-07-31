@@ -1,12 +1,3 @@
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-
 # Welcome To PHP Workshop
 
 Hope you have a good time with this workshop.
