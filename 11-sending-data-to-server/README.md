@@ -42,3 +42,21 @@
   </body>
 </html>
 ```
+
+# File Upload
+
+> ตั้งค่าอัพโหลดไฟล์ใน php.ini `file_uploads=On`
+
+> ดูตัวอย่างได้ใน [file-upload-example](file-upload-example)
+
+```php
+// var_dump($_FILES['file']); example
+
+array(5) {
+  ["name"]=> string(9) "a_cat.jpg"
+  ["type"]=> string(10) "image/jpeg"
+  ["tmp_name"]=> string(14) "/tmp/phpLXPjVS"
+  ["error"]=> int(0)
+  ["size"]=> int(156980)
+}
+```
