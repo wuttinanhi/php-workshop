@@ -43,7 +43,7 @@
 ```php
 <?php
   $fruits = array("Apple", "Banana", "Orange");
-  $fruits[] = "Cherry";
+  array_push($fruits, "Cherry");
   var_dump($fruits);
 ?>
 ```
