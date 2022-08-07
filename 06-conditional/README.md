@@ -50,7 +50,7 @@
   } elseif ($score >= 50) {
     echo "You pass the exam with half score!";
   } else {
-    echo "You not pass the exam!"
+    echo "You not pass the exam!";
   }
 ?>
 ```
@@ -64,15 +64,15 @@
   $score = 100;
 
   switch ($score) {
-    case $score === 100:
-      echo "You have full score! Congrats!";
-      break;
-    case $score >= 50:
-      echo "You pass the exam with half score!";
-      break;
-    default:
-      echo "You not pass the exam!";
-      break;
+      case 100:
+          echo "You have full score! Congrats!";
+          break;
+      case 50:
+          echo "You pass the exam with half score!";
+          break;
+      default:
+          echo "You not pass the exam!";
+          break;
   }
 ?>
 ```
