@@ -4,7 +4,7 @@ $file = $_FILES['file'];
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     // var dump file
-    var_dump($file);
+    print_r($file);
 
     // get file name
     $file_name = $file['name'];
@@ -21,8 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     // file image size
     $image_size_data = getimagesize($file['tmp_name']);
     echo '<br><br>$image_size_data = ';
+
     if ($image_size_data) {
-        var_dump($image_size_data);
+        print_r($image_size_data);
     } else {
         echo '(file is not image)';
     }
