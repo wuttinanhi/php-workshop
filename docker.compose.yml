@@ -11,35 +11,35 @@ services:
     volumes:
       - ./:/var/www/html/
     networks:
-      - dev_network
+      - php_workshop_dev_network
 
-  database:
+  mysql:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     volumes:
-      - dev_database_storage:/var/lib/mysql
+      - php_workshop_mysql_storage:/var/lib/mysql
     networks:
-      - dev_network
+      - php_workshop_dev_network
     expose:
       - 3306
     ports:
       - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: mydb
+      MYSQL_DATABASE: php_workshop
 
   phpmyadmin:
     image: phpmyadmin:5.1.1
     ports:
       - 8080:80
     networks:
-      - dev_network
+      - php_workshop_dev_network
     environment:
-      PMA_HOST: database
+      PMA_HOST: mysql
 
 networks:
-  dev_network:
+  php_workshop_dev_network:
 
 
 volumes:
-  dev_database_storage:
+  php_workshop_mysql_storage:
